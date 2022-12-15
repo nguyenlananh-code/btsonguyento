@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap hien thi so nguyen to</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    function checkSNT(n){
+        if (n<2){
+            return 0;
+        }else{
+            for (let i = 2; i < n; n++){
+                if (n%i===0){
+                    return 0;
+                }else {
+                    return 1;
+                }
+            }
+        }
+    }
+    let result = 0;
+    for (let i = 0; 1<1000; i++){
+        if (result===20){
+            break;
+        }else if (checkSNT(i)==1 || checkSNT(i)===2){
+            document.write(i+"<br>");
+            result++;
+
+        }
+    }
+</script>
